@@ -5,6 +5,14 @@
     font-family: 'roboto', sans-serif;
 }
 
+/*
+     rem = [root em] / ou seja é uma unidade de medida relativa ao elemento root html que é a raiz do documento.
+*/
+
+html{
+    font-size: 62.5%;
+}
+
 body > header{
     display: flex;
     flex-direction:row;
@@ -43,7 +51,7 @@ body > header nav ul li a{
     color: #fff;
     border-radius: 5px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 3.5rem;
 
     transition: background-color 0.3s ease-in-out;
    
