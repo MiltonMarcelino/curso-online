@@ -7,7 +7,10 @@
 <link rel="stylesheet" href="./css/estilo.css">
 <link rel="stylesheet" href="./css/conteudo.css">
 <link rel="stylesheet" href="./css/rodape.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <script src="./js/script.js" defer></script> 
 </head>
 
 <body>
@@ -28,22 +31,11 @@
 
         <button onclick="abrirModal()">Abrir modal</button>
 
-        <dialog id="meuModal">
+        <dialog id="meuModal" open>
             <p>Está é uma janela Modal</p>
-            <button onclick="fechaModal()">Fechar modal</button>
+            <button onclick="fecharModal()">Fechar modal</button>
         </dialog>
 
-        <script>
-  const modal = document.getElementById("meuModal");
- 
-  function abrirModal() {
-    modal.showModal(); // ou .show() para sem bloqueio de fundo
-  }
- 
-  function fecharModal() {
-    modal.close();
-  }
-</script>
 
         <section id="javascript">
             <header>
@@ -53,7 +45,7 @@
                 Aprenda tudo sobre JavaScript(ES6+), lógica de prog., orientação a objetos,
                 crie projetos para web com Node.js e Express
 
-                <a href="#">mais...</a>
+                <a href="#" onclick="fecharModal()">mais...</a>
             </p>
         </section>
         <section id="HTML">
@@ -95,6 +87,11 @@
 
 
     </footer>
+
+
+   
+
 </body>
+
 
 </html>
