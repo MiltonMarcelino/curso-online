@@ -5,6 +5,7 @@
 // */
 // // var nomeCompleto; aqui foi utilizada a técnica de camelCase
 
+
 // // Dê exemplo e 3 variaveis sobre algo que exista em um carro:
 // var tipoMaterialVolante = "Metalico";
 // var marcha;
@@ -35,5 +36,15 @@
 // //Não podem ter o seu valor alterado durante a execução do programa!
 // const PI = 3.14;
 // console.log(PI);
+
+// DOM - Document Object Model
+
+let botao = document.getElementById("btnAbrir");
+
+botao.addEventListener("click", function() {
+    alert("Olá mundo aqui de dentro do JS..."); 
+});
+
+
 
 
