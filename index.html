@@ -4,10 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title> INICIO </title>
+<link rel="shortcut icon" href="./img/favicon.png">
 <link rel="stylesheet" href="./css/estilo.css">
 <link rel="stylesheet" href="./css/conteudo.css">
 <link rel="stylesheet" href="./css/rodape.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="./css/modal.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <script src="./js/script.js" defer></script> 
+   <script src="./js/tarefa.js" defer></script> 
 </head>
 
 <body>
@@ -26,24 +32,12 @@
 
     <main>
 
-        <button onclick="abrirModal()">Abrir modal</button>
 
         <dialog id="meuModal">
-            <p>Está é uma janela Modal</p>
-            <button onclick="fechaModal()">Fechar modal</button>
+            <span class="close">X</span>
+            <div id="box"></div>
         </dialog>
 
-        <script>
-  const modal = document.getElementById("meuModal");
- 
-  function abrirModal() {
-    modal.showModal(); // ou .show() para sem bloqueio de fundo
-  }
- 
-  function fecharModal() {
-    modal.close();
-  }
-</script>
 
         <section id="javascript">
             <header>
@@ -53,7 +47,7 @@
                 Aprenda tudo sobre JavaScript(ES6+), lógica de prog., orientação a objetos,
                 crie projetos para web com Node.js e Express
 
-                <a href="#">mais...</a>
+                <a href="#" id="linkJs">mais...</a>
             </p>
         </section>
         <section id="HTML">
@@ -64,7 +58,7 @@
                 Desenvolva sites e aplicativos ágeis e intuitivos. Aprenda a estruturar com HTML, estilizar com CSS e
                 Bootstrap, criar interatividade com JavaScript e gerenciar estados e componentes com React e Recoil.
                 Torne-se um desenvolvedor Front-end e comece sua carreira no aquecido mercado de TI.
-                <a href="#">mais...</a>
+                <a href="#" id="linkHtml">mais...</a>
             </p>
         </section>
         <section id="CSS">
@@ -75,7 +69,7 @@
                 Os cursos de Cascading Style Sheets (CSS) ensinam a linguagem utilizada para estilizar páginas da Web.
                 Estude os conceitos básicos, como seletores, propriedades e técnicas de design responsivo. O CSS é
                 essencial para desenvolvedores Web que querem criar sites visualmente atraentes e bonitos.
-                <a href="#">mais...</a>
+                <a href="#"id="linkCss">mais...</a>
             </p>
         </section>
     </main>
@@ -95,6 +89,11 @@
 
 
     </footer>
+
+
+   
+
 </body>
+
 
 </html>
